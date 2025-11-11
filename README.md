@@ -2,6 +2,11 @@
 
 A browser extension that turns Steam browsing into a guessing game! Challenge yourself to guess how many reviews a game has before seeing the actual count.
 
+## Inspiration
+This extension was directly inspired by this YouTube video by 
+[Jonas Tyroller](https://twitter.com/JonasTyroller):
+[![YouTube Video](https://img.youtube.com/vi/Tu2cCEMwvHI/0.jpg)](https://www.youtube.com/watch?v=Tu2cCEMwvHI)
+
 ## Features
 
 - **Guess Game Modes**: Choose from 6 different review count ranges (0-9, 10-99, 100-999, 1K-9K, 10K-99K, 100K+)
