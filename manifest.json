@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "ReviewGuesser",
+  "version": "1.0.0",
+  "description": "Turn Steam browsing into a guessing game! Guess how many reviews a game has and track your stats.",
+  "author": "ReviewGuesser",
+  "homepage_url": "https://reviewguesser.com",
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://store.steampowered.com/app/*",
+        "https://store.steampowered.com/agecheck/app/*"
+      ],
+      "js": ["src/content.js"],
+      "css": ["src/styles.css"]
+    }
+  ]
+}

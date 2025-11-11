@@ -1,0 +1,19 @@
+# Editor files
+.vscode/
+
+# Build artifacts
+*.zip
+dist/
+build/
+
+# Development files
+node_modules/
+.env
+.env.local
+
+# Temporary files
+*.log
+*.tmp.*
+
+# AI
+.claude/*

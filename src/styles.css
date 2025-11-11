@@ -1,0 +1,162 @@
+/* styles.css */
+
+/* Override Steam's age gate margin on agecheck pages */
+/* Otherwise, review-guess-container appears below fold */
+#app_agegate.page_content {
+  margin-bottom: 0 !important;
+}
+
+.review-guesser-container {
+  background: linear-gradient(to bottom, #1b2838 0%, #2a475e 100%);
+  padding: 30px;
+  border-radius: 4px;
+  margin: 20px 0;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.age-check {
+  margin-top: 0px;
+}
+
+.rg-header h2 {
+  color: white;
+  margin: 0 0 10px 0;
+  font-size: 28px;
+}
+
+.rg-header p {
+  color: rgba(255,255,255,0.9);
+  margin: 0 0 20px 0;
+  font-size: 16px;
+}
+
+.rg-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.review-guess-button {
+  background: linear-gradient(to bottom, #5c7e10 5%, #4e6b0f 95%);
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 2px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-shadow: 1px 1px 0px rgba(0,0,0,0.3);
+}
+
+.review-guess-button:hover {
+  background: linear-gradient(to bottom, #6d9515 5%, #5c7e10 95%);
+  box-shadow: 0 0 10px rgba(92,126,16,0.5);
+}
+
+.guess-result {
+  padding: 20px;
+  color: white;
+  animation: slideIn 0.5s ease;
+}
+
+.guess-result h3 {
+  font-size: 32px;
+  margin: 0 0 15px 0;
+}
+
+.guess-result p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.guess-result .actual-count strong {
+  font-size: 24px;
+  color: #a4d007;
+}
+
+.action-buttons {
+  margin-top: 25px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.primary-btn, .secondary-btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.primary-btn {
+  background: linear-gradient(to bottom, #5c7e10 5%, #4e6b0f 95%);
+  color: white;
+  text-shadow: 1px 1px 0px rgba(0,0,0,0.3);
+}
+
+.primary-btn:hover {
+  background: linear-gradient(to bottom, #6d9515 5%, #5c7e10 95%);
+  box-shadow: 0 0 10px rgba(92,126,16,0.5);
+}
+
+.reviewguessr-floating {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+#random-game-float, #stats-float {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, #5c7e10 5%, #4e6b0f 95%);
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  transition: all 0.3s ease;
+}
+
+#stats-float {
+  background: linear-gradient(to bottom, #1b2838 5%, #2a475e 95%);
+}
+
+#random-game-float:hover, #stats-float:hover {
+  transform: scale(1.1);
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes streakPop {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
