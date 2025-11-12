@@ -2,20 +2,24 @@
 
 A browser extension that turns Steam browsing into a guessing game! Challenge yourself to guess how many reviews a game has before seeing the actual count.
 
+<p align="center">
+  <img src="img/reviewguesser_question.png" alt="ReviewGuesser Question View" width="45%">
+  <img src="img/reviewguesser_answer.png" alt="ReviewGuesser Answer View" width="45%">
+</p>
+
 ## Inspiration
 This extension was directly inspired by this YouTube video by 
 [Jonas Tyroller](https://twitter.com/JonasTyroller):
 [![YouTube Video](https://img.youtube.com/vi/Tu2cCEMwvHI/0.jpg)](https://www.youtube.com/watch?v=Tu2cCEMwvHI)
 
-## Features
+## How to Play
 
-- **Guess Game Modes**: Choose from 6 different review count ranges (0-9, 10-99, 100-999, 1K-9K, 10K-99K, 100K+)
-- **Points System**: Earn up to 100 points for correct guesses, with partial credit for close guesses
-- **Streak Tracking**: Build winning streaks and compete with yourself
-- **Persistent Stats**: Track your accuracy, total games played, best streak, and total points
-- **Random Game Discovery**: Quick navigation to discover new Steam games
-- **Age Check Handling**: Seamlessly skip age-restricted games
-- **Steam Native Design**: Clean interface using Steam's color scheme
+1. Navigate to any Steam game store page (e.g., `https://store.steampowered.com/explore/random/`)
+2. The ReviewGuesser interface will appear, hiding the actual review count
+3. Make your guess by clicking one of the range buttons
+4. See your results and earn points based on accuracy
+5. Click "Next Random Game" to continue playing
+
 
 ## Installation
 
@@ -33,7 +37,7 @@ Click the green **Code** button at the top of this page, then select **Download 
 
 ![Download ZIP](https://docs.github.com/assets/cb-20363/images/help/repository/code-button.png)
 
-After downloading, **unzip the file** to a folder on your computer (like your Desktop or Downloads folder). Remember where you put it!
+After downloading, **unzip the file** to a folder on your compute
 
 #### Step 2: Open Chrome Extensions Page
 
@@ -43,7 +47,7 @@ In Chrome, either:
 
 #### Step 3: Enable Developer Mode
 
-Look for the **Developer mode** toggle switch in the **top-right corner** of the page and turn it **ON**. Don't worry - this is a safe Chrome feature that lets you install extensions from your computer!
+Look for the **Developer mode** toggle switch in the **top-right corner** of the page and turn it **ON**.
 
 #### Step 4: Load the Extension
 
@@ -61,20 +65,6 @@ That's it! 🎉 Visit any Steam game page (try clicking [this random game link](
 - **Don't see the ReviewGuesser UI?** Try refreshing the Steam page after installing
 - **Extension disappeared after restarting Chrome?** This is normal for unpacked extensions - just leave it installed and it will keep working
 - **Need help?** [Open an issue](https://github.com/AndyCarnevale/reviewGuesser/issues)
-
-### Other Browsers
-
-- **Edge**: Compatible! Install from Chrome Web Store
-- **Opera**: Compatible! Install from Chrome Web Store
-- **Firefox**: Coming soon
-
-## How to Play
-
-1. Navigate to any Steam game store page (e.g., `https://store.steampowered.com/explore/random/`)
-2. The ReviewGuesser interface will appear, hiding the actual review count
-3. Make your guess by clicking one of the range buttons
-4. See your results and earn points based on accuracy
-5. Click "Next Random Game" to continue playing
 
 ## Stats
 
@@ -110,25 +100,6 @@ View stored stats:
 1. Open DevTools on a Steam store page (F12)
 2. Go to Application > Storage > Local Storage > chrome-extension://[extension-id]
 3. Look for the `stats` key containing the JSON object
-
-### Project Structure
-
-```
-reviewGuesser/
-├── manifest.json         # Extension configuration
-├── src/
-│   ├── content.js       # Main game logic and DOM manipulation
-│   └── styles.css       # Steam-themed styling
-├── AGENTS.md            # Development documentation
-└── README.md            # This file
-```
-
-## Contributing
-
-Found a bug or have a feature request?
-
-- **Issues**: [GitHub Issues](https://github.com/AndyCarnevale/reviewGuesser/issues)
-- **Pull Requests**: Welcome! Please read [AGENTS.md](AGENTS.md) for development setup
 
 ## Links
 
